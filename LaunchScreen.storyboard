@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchScreen-ver2" translatesAutoresizingMaskIntoConstraints="NO" id="h99-Mh-W7L">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="  Copyright © 2016 LeeroyJenkins. All rights reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="obG-Y5-kRd">
+                                <rect key="frame" x="20" y="559" width="560" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="3Eo-vg-lCb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="3Eo-vg-lCb"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="3Eo-vg-lCb"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="obG-Y5-kRd" secondAttribute="centerX" id="5cz-MP-9tL"/>
+                            <constraint firstAttribute="bottom" secondItem="obG-Y5-kRd" secondAttribute="bottom" constant="20" symbolic="YES" id="Ch3-X0-0Ix"/>
+                            <constraint firstAttribute="trailing" secondItem="h99-Mh-W7L" secondAttribute="trailing" id="FH7-3C-VmO"/>
+                            <constraint firstItem="h99-Mh-W7L" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="GNa-8c-mEw"/>
+                            <constraint firstItem="obG-Y5-kRd" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="20" symbolic="YES" id="SfN-ll-jLj"/>
+                            <constraint firstAttribute="bottom" secondItem="obG-Y5-kRd" secondAttribute="bottom" constant="20" id="Y44-ml-fuU"/>
+                            <constraint firstItem="h99-Mh-W7L" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="eDF-SB-Cws"/>
+                            <constraint firstItem="h99-Mh-W7L" firstAttribute="centerX" secondItem="obG-Y5-kRd" secondAttribute="centerX" id="eK6-oH-3U4"/>
+                            <constraint firstItem="h99-Mh-W7L" firstAttribute="bottom" secondItem="xb3-aO-Qok" secondAttribute="top" id="sdw-6o-B42"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="h99-Mh-W7L"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="Ch3-X0-0Ix"/>
+                                <exclude reference="FH7-3C-VmO"/>
+                                <exclude reference="GNa-8c-mEw"/>
+                                <exclude reference="eDF-SB-Cws"/>
+                                <exclude reference="eK6-oH-3U4"/>
+                                <exclude reference="sdw-6o-B42"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="h99-Mh-W7L"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="5cz-MP-9tL"/>
+                                <include reference="Ch3-X0-0Ix"/>
+                                <exclude reference="SfN-ll-jLj"/>
+                                <exclude reference="Y44-ml-fuU"/>
+                                <include reference="FH7-3C-VmO"/>
+                                <include reference="GNa-8c-mEw"/>
+                                <include reference="eDF-SB-Cws"/>
+                                <include reference="eK6-oH-3U4"/>
+                                <include reference="sdw-6o-B42"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.5" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="LaunchScreen-ver2" width="374" height="644"/>
+    </resources>
+</document>
